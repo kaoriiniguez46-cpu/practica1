@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App CULTURA</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <div class="app">
+        <header class="header">
+            <h1>CULTURA</h1>
+            <p>Práctica 1 - Sub 2</p>
+        </header>
+
+        <section class="perfil">
+            <img src="historia.webp" alt="perfil">
+            <h2>Alumna</h2>
+            <p>Kaori Simone Iñiguez Islas</p>
+        </section>
+
+        <nav class="menu">
+            <button onclick="mostrarSeccion('inicio')">Inicio</button>
+            <button onclick="mostrarSeccion('elementos-culturales')">Elementos</button>
+            <button onclick="mostrarSeccion('historia-patrimonio')">Historia</button>
+        </nav>
+
+        <main>
+            <section id="inicio" class="seccion activa">
+                <h2>Bienvenido</h2>
+                <p>Esta app muestra información sobre la cultura.</p>
+                
+            </section>
+
+            <section id="elementos-culturales" class="seccion">
+                <h2>Elementos culturales tradicionales</h2>
+                <div class="card">
+                    <h3>Gastronomia</h3>
+                    <p>Platos tipicos,ingredientes característicos,tecnicas de preparacion
+                        y su significado histórico.</p>
+                </div>
+                <div class="card">
+             <h3>Música y danzas</h3>
+                    <p>Géneros tradicionales,instrumentos propios,coreografís 
+                        y ocasiones en las que se representan.</p>
+                </div>
+                <div class="card">
+                    <h3>Artesanías</h3>
+                    <p>Tipos de manualidades,materiales utilizados,luigares
+                        de produccion y su simbolismo. </p>
+                </div>
+            </section>
+
+            <section id="historia-patrimonio" class="seccion">
+                <h2>Historia y patrimonio</h2>
+                <div class="card">
+                    <p>Lugares emblématicos:Monumentos,sitios arqueológicos,museos,etc.</p>
+                    <p>Figuras relevantes:Personajes que marcaron la cultura de la región.</p>
+                    <p>Patrimonio inmaterial:Tradiciones,rituales,lenguas indigenas y 
+                        conocimientos transmitidos de generación en genetación.</p>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <span>🍽️</span>
+            <span>🎶</span>
+            <span>👨‍🎨</span>
+        </footer>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
